@@ -1,0 +1,15 @@
+# FUNCTIONS
+def function_name (required argument, optional_argument =  default value, ...):
+  return value1, value2,....
+
+#Example: temperature.py
+
+def convert_to_celsius (degrees, source = 'fahrenheit'):
+  if source.lower() == 'farhenheit':
+    return (degrees-32)*(5/9)
+
+  elif source.lower()== 'kelvin':
+    return(degrees - 273.15)
+
+  else:
+    return f"Do not know to convert from {source}"
