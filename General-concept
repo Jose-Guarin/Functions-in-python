@@ -5,7 +5,7 @@ def function_name (required argument, optional_argument =  default value, ...):
 #Example: temperature.py
 
 def convert_to_celsius (degrees, source = 'fahrenheit'):
-  if source.lower() == 'farhenheit':
+  if source.lower() == 'fahrenheit':
     return (degrees-32)*(5/9)
 
   elif source.lower()== 'kelvin':
@@ -13,3 +13,15 @@ def convert_to_celsius (degrees, source = 'fahrenheit'):
 
   else:
     return f"Do not know to convert from {source}"
+
+convert = convert_to_celsius(100,'farhenheit')
+print(convert)
+
+convert = convert_to_celsius(50)
+print(convert)
+
+convert = convert_to_celsius(degrees = 500,source = 'kelvin')
+print(convert)
+    
+convert = convert_to_celsius(degrees = 500,source = 'calories')
+print(convert)
