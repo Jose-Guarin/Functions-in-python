@@ -25,3 +25,19 @@ print(convert)
     
 convert = convert_to_celsius(degrees = 500,source = 'calories')
 print(convert)
+
+==========APPLYING A FUNCTION==========
+===> applymap method: The method apply the function to every element in the list
+  def format_String(x):
+    return f"{x:, .2f}"
+
+script: list.applymap(format_String)
+script: list.appymap(lambda x: f"{x:,.2f}")
+# lambdas expresions are called ANONYMOUS FUNCTIONS and allow to define a function in a single line.
+
+copy or subset = df.loc[ :, ['country','continent']].copy()
+
+
+
+
+
